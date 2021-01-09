@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=fallback');
+@font-face {
+    font-family: 'Filson Soft';
+    src: local('Filson Soft'), url(./fonts/Filson-Soft.ttf) format('truetype');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

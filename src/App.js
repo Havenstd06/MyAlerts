@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import {
+    Switch,
+    Route,
+    useLocation
+} from 'react-router-dom';
+
+import './css/App.css';
+
+import AOS from 'aos';
+import { focusHandling } from './utils/FocusHandling';
+
+import Home from './pages/Home';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const location = useLocation();
+
+    useEffect(() => {
+        AOS.init({
+            once: true,
+            disable: 'phone',
+            duration: 700,
+            easing: 'ease-out-cubic',
+        });
+    });
+
+    useEffect(() => {
+        document.querySelector('html').style.scrollBehavior = 'auto'
+        window.scroll({ top: 0 })
+        document.querySelector('html').style.scrollBehavior = ''
+        focusHandling('outline');
+    }, [location.pathname]); // triggered on route change
+
+    return (
+        <>
+            <Switch>
+                <Route exact path="/">
+                    <Home />
+                </Route>
+            </Switch>
+        </>
+    );
 }
 
 export default App;
