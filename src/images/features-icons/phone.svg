@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="93px" viewBox="0 0 64 93" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Group 3 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-20.8%" y="-20.8%" width="141.7%" height="141.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="5" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="alerts-desktop-final" transform="translate(-282.000000, -1130.000000)">
+            <g id="Group-3-Copy" filter="url(#filter-1)" transform="translate(263.000000, 1130.000000)">
+                <g id="Group-2" transform="translate(19.000000, 0.000000)">
+                    <g id="Group">
+                        <path d="M33,0 C39.8433768,0 45.4517266,5.2877796 45.9621433,12.0004329 L42.9506147,11.9998991 C42.4579018,7.03784871 38.3380219,3.14285309 33.2799048,3.0038418 L33,3 L13,3 C7.57076009,3 3.15206828,7.32667079 3.0038418,12.7200952 L3,13 L3,71 C3,76.4292399 7.32667079,80.8479317 12.7200952,80.9961582 L13,81 L33,81 C38.4292399,81 42.8479317,76.6733292 42.9961582,71.2799048 L43,71 L43,40 L46,40 L46,71 C46,78.1797017 40.1797017,84 33,84 L13,84 C5.82029825,84 0,78.1797017 0,71 L0,13 C0,5.82029825 5.82029825,0 13,0 L33,0 Z" id="Combined-Shape" fill="#97A1FF" fill-rule="nonzero"></path>
+                        <circle id="Oval-Copy" stroke="#FFFFFF" stroke-width="3" fill="#FFFFFF" cx="39" cy="26" r="14.5"></circle>
+                        <path d="M39.3664921,28.1561181 C39.8481675,28.1561181 40.1413613,27.9198312 40.2041885,27.4472574 L40.9371728,20.2011252 L40.9371728,19.7482419 C40.9371728,19.2756681 40.6649215,19 40.1413613,19 L37.8586387,19 C37.3560209,19 37.0628272,19.2756681 37.0628272,19.7482419 L37.0628272,20.2011252 L37.7958115,27.4472574 C37.8586387,27.9198312 38.1518325,28.1561181 38.6544503,28.1561181 L39.3664921,28.1561181 Z M38.9895288,33 C40.1204188,33 41,32.2714487 41,31.2869198 C41,30.302391 40.1204188,29.5344585 38.9895288,29.5344585 C37.8376963,29.5344585 37,30.302391 37,31.2869198 C37,32.2714487 37.8376963,33 38.9895288,33 Z" id="!" fill="#373659" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+                <rect id="Rectangle" x="0" y="0" width="84" height="84"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
