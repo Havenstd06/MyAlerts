@@ -24,7 +24,7 @@ function Features() {
 
                 <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-3 gap-8 mt-8" data-aos="zoom-y-out" data-aos-delay="450">
 
-                    <FeatureCard svg={<Phone className="w-full ml-2" />}
+                    <FeatureCard svg={<Phone className="ml-2 w-full h-full" />}
                                  title="SMS Notifications"
                                  description="The second it drops, the moment you cop. Simple, Fast, Efficient."
                                  titleBr={true}
