@@ -13,7 +13,7 @@ const Get = (props) => {
 
     return (
         <div className="relative mx-auto mx-4 pt-12 z-50" id={id}>
-            <h1 className="text-gray-50 text-3xl text-center pt-16" data-aos="zoom-y-out" data-aos-delay="250">
+            <h1 className="text-gray-50 text-4xl text-center pt-16" data-aos="zoom-y-out" data-aos-delay="250">
                 For Less Than A Cup Of Coffee You Get
             </h1>
 

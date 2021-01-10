@@ -7,8 +7,9 @@ import Features from '../partials/Features';
 import Steps from '../partials/Steps';
 import Get from "../partials/Get";
 import FAQ from "../partials/FAQ";
+import Testimonial from "../partials/Testimonial";
 import StepsBackground from "../components/backgrounds/StepsBackground";
-// import Footer from '../partials/Footer';
+import Footer from '../partials/Footer';
 
 function Home() {
     return (
@@ -31,10 +32,12 @@ function Home() {
 
                 <FAQ id="faq" />
 
+                <Testimonial id="testimonial" />
+
             </main>
 
             {/*  Site footer */}
-            {/*<Footer />*/}
+            <Footer id="footer" />
 
         </div>
     );

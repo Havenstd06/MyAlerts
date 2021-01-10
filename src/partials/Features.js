@@ -19,7 +19,7 @@ const Features = (props) => {
 
             <div className="relative max-w-6xl mx-auto px-4 sm:px-6 z-50">
 
-                <h1 className="text-gray-50 text-3xl text-center pt-16" data-aos="zoom-y-out" data-aos-delay="250">
+                <h1 className="text-gray-50 text-4xl text-center pt-16" data-aos="zoom-y-out" data-aos-delay="250">
                     Features
                 </h1>
 
