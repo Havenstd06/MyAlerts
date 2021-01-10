@@ -1,0 +1,64 @@
+import React from 'react';
+import FAQBackground from "../components/backgrounds/FAQBackground";
+import Question from "../components/Question";
+
+function Features() {
+
+    return (
+        <section className="relative min-h-screen pt-6 pb-12 sm:pb-24">
+
+            <FAQBackground/>
+
+            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 z-50">
+
+                <h1 className="text-gray-50 text-3xl text-center pt-16" data-aos="zoom-y-out" data-aos-delay="250">
+                    Frequently Asked Questions
+                </h1>
+
+                <div className="px-4 py-6 mx-auto md:px-24 lg:px-8 lg:py-8 mt-8" data-aos="zoom-y-out" data-aos-delay="450">
+                    <div className="max-w-xl sm:mx-auto lg:max-w-5xl">
+                        <div className="space-y-4">
+
+                            <Question title="What is Alert?">
+                                Alerts is a Text Message Service that caters all your reselling information straight to your phone.
+                            </Question>
+
+                            <Question title="How much does it Cost?">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                accusantium doloremque rem aperiam, eaque ipsa quae.
+                            </Question>
+
+                            <Question title="How can I sign up?">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                accusantium doloremque rem aperiam, eaque ipsa quae.
+                            </Question>
+
+                            <Question title="Does it matter if I have an Android or iPhone?">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                accusantium doloremque rem aperiam, eaque ipsa quae.
+                            </Question>
+
+                            <Question title="Which Countries are covered by Alerts?">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                accusantium doloremque rem aperiam, eaque ipsa quae.
+                            </Question>
+
+                            <Question title="Can I cancel anytime?">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                accusantium doloremque rem aperiam, eaque ipsa quae.
+                            </Question>
+
+                            <Question title="How soon will I start getting texts after purchase?">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                accusantium doloremque rem aperiam, eaque ipsa quae.
+                            </Question>
+
+                        </div>
+                    </div>
+                </div>
+            </div >
+        </section >
+    );
+}
+
+export default Features;

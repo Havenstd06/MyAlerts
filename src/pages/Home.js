@@ -4,6 +4,7 @@ import Header from '../partials/Header';
 import Features from '../partials/Features';
 import Steps from '../partials/Steps';
 import Get from "../partials/Get";
+import FAQ from "../partials/FAQ";
 import StepsBackground from "../components/backgrounds/StepsBackground";
 // import Footer from '../partials/Footer';
 
@@ -26,6 +27,7 @@ function Home() {
                     <Get />
                 </div>
 
+                <FAQ />
 
             </main>
 
