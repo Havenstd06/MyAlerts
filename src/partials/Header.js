@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 // import { Link } from 'react-router-dom';
-import HeaderBackground from "./HeaderBackground";
-import Navbar from "./Navbar";
+import HeaderBackground from "../components/HeaderBackground";
+import Navbar from "../components/Navbar";
+import HomeSection from "../components/HomeSection";
+
 
 function Header() {
 
@@ -17,14 +19,14 @@ function Header() {
     }, [top]);
 
     return (
-        <header className="bg-gradient-to-t from-bluebell to-bluebell-light h-screen relative overflow-hidden">
+        <header className="bg-gradient-to-t from-bluebell to-bluebell-light min-h-screen relative overflow-hidden">
                 {/*background svg*/}
                 <HeaderBackground />
 
-                <div className="relative pt-6 pb-16 sm:pb-24 z-50">
-                    <div className="relative pt-6 pb-16 sm:pb-24">
-                        <Navbar />
-                    </div>
+                <div className="relative pt-6 pb-6 sm:pb-8 z-50">
+                    <Navbar />
+
+                    <HomeSection />
                 </div>
         </header>
     );

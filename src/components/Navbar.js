@@ -3,7 +3,7 @@ import Logo from "./Logo";
 import Transition from "../utils/Transition";
 
 function Navbar() {
-    const [navbarOpen, setNavbarOpen] = React.useState(true);
+    const [navbarOpen, setNavbarOpen] = React.useState(false);
 
     return (
             <div>
@@ -12,7 +12,7 @@ function Navbar() {
                          aria-label="Global">
                         <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
                             <div className="flex items-center justify-between w-full md:w-auto">
-                                <a href="#">
+                                <a href="#" data-aos="zoom-y-out" data-aos-delay="200">
                                     <span className="sr-only">MyAlerts</span>
                                     <Logo />
                                 </a>
@@ -32,7 +32,7 @@ function Navbar() {
                                 </div>
                             </div>
                         </div>
-                        <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0 md:space-x-10">
+                        <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0 md:space-x-10" data-aos="zoom-y-out" data-aos-delay="500">
                             <a href="#" className="font-medium text-indigo-300 hover:text-indigo-500 transition duration-200 ease-out">
                                 Home
                             </a>
@@ -83,32 +83,32 @@ function Navbar() {
                     <div className="md:hidden">
                         <div className="fixed inset-0 flex z-50">
                             <div className="fixed inset-0">
-                                <div className="absolute inset-0 bg-indigo-300 bg-opacity-70 w-full">
+                                <div className="absolute inset-0 bg-indigo-300 bg-opacity-90 w-full">
                                     <div className="flex items-center justify-between flex-col py-12 px-4 h-screen">
                                         <img src="https://i.imgur.com/EkkJ6mb.png" alt="MyAlerts" />
                                         <div className="mb-8 mt-3">
                                             <div className="flex flex-col items-center space-y-8 mt-8">
-                                                <span className="text-5xl text-indigo-600 hover:text-indigo-700 transition duration-200 ease-out">
+                                                <span className="text-4xl text-indigo-600 hover:text-indigo-700 transition duration-200 ease-out">
                                                     Home
                                                 </span>
 
-                                                <span className="text-5xl text-gray-50 hover:text-gray-200 transition duration-200 ease-out">
+                                                <span className="text-4xl text-gray-50 hover:text-gray-200 transition duration-200 ease-out">
                                                     Features
                                                 </span>
 
-                                                <span className="text-5xl text-gray-50 hover:text-gray-200 transition duration-200 ease-out">
+                                                <span className="text-4xl text-gray-50 hover:text-gray-200 transition duration-200 ease-out">
                                                     Steps
                                                 </span>
 
-                                                <span className="text-5xl text-gray-50 hover:text-gray-200 transition duration-200 ease-out">
+                                                <span className="text-4xl text-gray-50 hover:text-gray-200 transition duration-200 ease-out">
                                                     Alerts
                                                 </span>
 
-                                                <span className="text-5xl text-gray-50 hover:text-gray-200 transition duration-200 ease-out">
+                                                <span className="text-4xl text-gray-50 hover:text-gray-200 transition duration-200 ease-out">
                                                     FAQ
                                                 </span>
 
-                                                <span className="text-5xl text-gray-50 hover:text-gray-200 transition duration-200 ease-out">
+                                                <span className="text-4xl text-gray-50 hover:text-gray-200 transition duration-200 ease-out">
                                                     Testimonial
                                                 </span>
                                             </div>

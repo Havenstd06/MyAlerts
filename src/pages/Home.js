@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from '../partials/Header';
-// import HeroHome from '../partials/HeroHome';
+import Features from '../partials/Features';
 // import Footer from '../partials/Footer';
 
 function Home() {
@@ -11,10 +11,10 @@ function Home() {
             <Header />
 
             {/*  Page content */}
-            <main className="flex-grow h-56 bg-bluebell">
+            <main className="flex-grow bg-bluebell">
 
                 {/*  Page sections */}
-                {/*<HeroHome />*/}
+                <Features />
 
             </main>
 
