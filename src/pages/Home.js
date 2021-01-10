@@ -1,7 +1,4 @@
 import React from 'react';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-
-
 import Header from '../partials/Header';
 import Features from '../partials/Features';
 import Steps from '../partials/Steps';
