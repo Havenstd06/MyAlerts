@@ -180,7 +180,7 @@ function HeaderBackground() {
 
                 {/*chat box right bottom*/}
                 <svg
-                    className="hidden sm:block absolute right-0 transform -translate-y-3/4 -translate-x-1/4 sm:translate-y-7/8 lg:-translate-x-1/4"
+                    className="hidden sm:block absolute right-0 transform -translate-y-3/4 -translate-x-1/4 md:translate-y-5/7 lg:translate-y-7/8 lg:-translate-x-1/4"
                     width="458" height="436" viewBox="0 0 520 408" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.0825428" fillRule="evenodd" clipRule="evenodd" d="M428.235 0C478.916 0 520 41.1051 520 91.8108V233.7C520 284.406 478.916 325.511 428.235 325.511H224.266L141.818 408V325.511H91.7647C41.0845 325.511 0 284.406 0 233.7V91.8108C0 41.1051 41.0845 0 91.7647 0H428.235Z" fill="url(#paint0_linear)"/>
                     <defs>
@@ -190,6 +190,25 @@ function HeaderBackground() {
                         </linearGradient>
                     </defs>
                 </svg>
+
+                {/*mobile chat box bottom*/}
+                <svg
+                    className="sm:hidden block absolute right-full transform translate-y-120 translate-x-full"
+                    width="278" height="354" viewBox="0 0 278 354" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.0825428" fillRule="evenodd" clipRule="evenodd" d="M32.9118 0C3.96555 0 -19.5 23.4742 -19.5 52.4312V133.461C-19.5 162.418 3.96555 185.892 32.9118 185.892H149.41L196.5 233V185.892H225.088C254.034 185.892 277.5 162.418 277.5 133.461V52.4312C277.5 23.4742 254.034 0 225.088 0H32.9118Z" fill="url(#paint0_linear)"/>
+                    <path opacity="0.0825428" fillRule="evenodd" clipRule="evenodd" d="M-132.588 120.5C-161.534 120.5 -185 143.974 -185 172.931V253.961C-185 282.918 -161.534 306.392 -132.588 306.392H-16.0902L31 353.5V306.392H59.5882C88.5345 306.392 112 282.918 112 253.961V172.931C112 143.974 88.5345 120.5 59.5882 120.5H-132.588Z" fill="url(#paint1_linear)"/>
+                    <defs>
+                        <linearGradient id="paint0_linear" x1="277.5" y1="0" x2="277.5" y2="233" gradientUnits="userSpaceOnUse">
+                            <stop stopColor="#53EDFF" stopOpacity="0.01"/>
+                            <stop offset="1" stopColor="#9DB1FF"/>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear" x1="112" y1="120.5" x2="112" y2="353.5" gradientUnits="userSpaceOnUse">
+                            <stop stopColor="#53EDFF" stopOpacity="0.01"/>
+                            <stop offset="1" stopColor="#9DB1FF"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+
 
             </div>
         </div>

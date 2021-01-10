@@ -1,6 +1,6 @@
 function FeaturesBackground() {
     return (
-        <div className="absolute inset-y-0 h-full w-full overflow-hidden z-10">
+        <div className="hidden md:block absolute inset-y-0 h-full w-full overflow-hidden z-10">
             <div className="relative h-full">
 
                 {/*chat box group top left*/}

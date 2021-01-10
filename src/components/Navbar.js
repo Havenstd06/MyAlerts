@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "./Logo";
+import Logo from "./svgr/Logo";
 import Transition from "../utils/Transition";
 
 function Navbar() {
@@ -7,7 +7,7 @@ function Navbar() {
 
     return (
             <div>
-                <div className="max-w-7xl mx-auto px-8 sm:px-6">
+                <div className="max-w-7xl mx-auto px-8 sm:px-6 mb-12 md:mb-0">
                     <nav className="relative flex items-center justify-between sm:h-10 md:justify-center"
                          aria-label="Global">
                         <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
