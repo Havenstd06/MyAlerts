@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Transition from '../utils/Transition.js';
-import FeaturesBackground from "../components/FeaturesBackground";
+import FeaturesBackground from "../components/backgrounds/FeaturesBackground";
 import FeatureCard from "../components/FeatureCard";
 import Phone from "../components/svgr/features-icons/Phone";
 import Pin from "../components/svgr/features-icons/Pin";
@@ -12,11 +12,11 @@ import Headphones from "../components/svgr/features-icons/Headphones";
 function Features() {
 
     return (
-        <section className="relative min-h-screen pt-6 pb-6 sm:pb-8">
+        <section className="relative min-h-screen pt-6 pb-12 sm:pb-24">
 
             <FeaturesBackground/>
 
-            <div className="relative max-w-5xl mx-auto px-4 sm:px-6 z-50">
+            <div className="relative max-w-6xl mx-auto px-4 sm:px-6 z-50">
 
                 <h1 className="text-gray-50 text-3xl text-center pt-16" data-aos="zoom-y-out" data-aos-delay="250">
                     Features
