@@ -4,7 +4,7 @@ const FeatureCard = (props) => {
     const { moreClass = "", svg, title } = props;
 
     return (
-        <div className={"col-span-3 lg:col-span-1 " + moreClass}>
+        <div className={moreClass}>
             <div className="py-3 px-6 w-80 flex items-center justify-between shadow-2xl shadow-inner border border-graybell rounded-3xl bg-gradient-to-tl from-graybell via-graybell-light to-graybell bg-opacity-60">
                 <div className="w-2/5">
                     {svg}
