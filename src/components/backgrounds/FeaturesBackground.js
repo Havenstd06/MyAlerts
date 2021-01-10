@@ -71,9 +71,9 @@ function FeaturesBackground() {
                     </defs>
                 </svg>
 
-                {/*chat box right top*/}
+                {/*chat box right bottom*/}
                 <svg
-                    className="hidden sm:block absolute left-full transform -translate-y-3/4 -translate-x-1/4 sm:translate-y-2/4 lg:-translate-x-full"
+                    className="hidden sm:block absolute left-full transform -translate-y-3/4 -translate-x-1/4 sm:translate-y-2/7 lg:-translate-x-full"
                     width="207" height="618" viewBox="0 0 207 618" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.4651">
                         <path opacity="0.0825428" fillRule="evenodd" clipRule="evenodd" d="M395.353 0C436.579 0 470 33.4483 470 74.7088V190.168C470 231.428 436.579 264.877 395.353 264.877H229.431L162.364 332V264.877H121.647C80.4206 264.877 47 231.428 47 190.168V74.7088C47 33.4483 80.4206 0 121.647 0H395.353Z" fill="url(#paint0_linear)"/>
