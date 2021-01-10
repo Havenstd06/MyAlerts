@@ -3,6 +3,8 @@ import React from 'react';
 import Header from '../partials/Header';
 import Features from '../partials/Features';
 import Steps from '../partials/Steps';
+import Get from "../partials/Get";
+import StepsBackground from "../components/backgrounds/StepsBackground";
 // import Footer from '../partials/Footer';
 
 function Home() {
@@ -16,7 +18,13 @@ function Home() {
 
                 {/*  Page sections */}
                 <Features />
-                <Steps />
+
+                <div className="relative min-h-screen pt-6 pb-6 sm:pb-12">
+                    <StepsBackground />
+
+                    <Steps />
+                    <Get />
+                </div>
 
 
             </main>
