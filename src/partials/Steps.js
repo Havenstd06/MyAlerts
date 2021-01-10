@@ -5,10 +5,11 @@ import StepTwo from "../components/svgr/steps-icons/StepTwo";
 import StepThree from "../components/svgr/steps-icons/StepThree";
 
 
-function Steps() {
+const Steps = (props) => {
+    const { id = null } = props;
 
     return (
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 pb-20">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 pb-20" id={id}>
 
             <h1 className="text-gray-50 text-3xl text-center pt-16" data-aos="zoom-y-out" data-aos-delay="250">
                 Steps To Join

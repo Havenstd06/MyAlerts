@@ -8,10 +8,11 @@ import Book from "../components/svgr/for-less-than-icons/Book";
 import Hourglass from "../components/svgr/for-less-than-icons/Hourglass";
 import Bell from "../components/svgr/for-less-than-icons/Bell";
 
-function Get() {
+const Get = (props) => {
+    const { id = null } = props;
 
     return (
-        <div className="relative mx-auto mx-4 pt-12 z-50">
+        <div className="relative mx-auto mx-4 pt-12 z-50" id={id}>
             <h1 className="text-gray-50 text-3xl text-center pt-16" data-aos="zoom-y-out" data-aos-delay="250">
                 For Less Than A Cup Of Coffee You Get
             </h1>

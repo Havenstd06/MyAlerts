@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 
 import Header from '../partials/Header';
 import Features from '../partials/Features';
@@ -12,22 +14,22 @@ function Home() {
     return (
         <div className="flex flex-col min-h-screen overflow-hidden">
             {/*  Site header */}
-            <Header />
+            <Header id="home" />
 
             {/*  Page content */}
-            <main className="flex-grow bg-bluebell">
+            <main className="flex-grow bg-bluebell z-40">
 
                 {/*  Page sections */}
-                <Features />
+                <Features id="features" />
 
                 <div className="relative min-h-screen pt-6 pb-6 sm:pb-12">
                     <StepsBackground />
 
-                    <Steps />
-                    <Get />
+                    <Steps id="steps" />
+                    <Get id="get" />
                 </div>
 
-                <FAQ />
+                <FAQ id="faq" />
 
             </main>
 

@@ -2,10 +2,11 @@ import React from 'react';
 import FAQBackground from "../components/backgrounds/FAQBackground";
 import Question from "../components/Question";
 
-function Features() {
+const FAQ = (props) => {
+    const { id = null } = props;
 
     return (
-        <section className="relative min-h-screen pt-6 pb-12 sm:pb-24">
+        <section className="relative min-h-screen pt-6 pb-12 sm:pb-24" id={id}>
 
             <FAQBackground/>
 
@@ -61,4 +62,4 @@ function Features() {
     );
 }
 
-export default Features;
+export default FAQ;

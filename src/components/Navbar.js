@@ -1,6 +1,11 @@
 import React from "react";
+
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
 import Logo from "./svgr/Logo";
 import Transition from "../utils/Transition";
+import Logo2 from "./svgr/Logo2";
+import CloseIcon from "./svgr/CloseIcon";
 
 function Navbar() {
     const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -32,43 +37,54 @@ function Navbar() {
                                 </div>
                             </div>
                         </div>
-                        <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0 md:space-x-10" data-aos="zoom-y-out" data-aos-delay="500">
-                            <a href="#" className="font-medium text-indigo-300 hover:text-indigo-500 transition duration-200 ease-out">
+                        <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0 md:space-x-10"
+                             data-aos="zoom-y-out"
+                             data-aos-delay="500">
+
+                            <AnchorLink href="#home"
+                                        offset='100'
+                                        className="font-medium text-indigo-300 hover:text-indigo-500 transition duration-200 ease-out cursor-pointer"
+                            >
                                 Home
-                            </a>
+                            </AnchorLink>
 
-                            <a href="#" className="font-medium text-gray-50 hover:text-gray-400 transition duration-200 ease-out">
+                            <AnchorLink href="#features"
+                                        offset='-25'
+                                        className="font-medium text-gray-50 hover:text-gray-400 transition duration-200 ease-out cursor-pointer"
+                            >
                                 Features
-                            </a>
+                            </AnchorLink>
 
-                            <a href="#" className="font-medium text-gray-50 hover:text-gray-400 transition duration-200 ease-out">
+                            <AnchorLink href="#steps"
+                                        offset='-25'
+                                        className="font-medium text-gray-50 hover:text-gray-400 transition duration-200 ease-out cursor-pointer"
+                            >
                                 Steps
-                            </a>
+                            </AnchorLink>
 
-                            <a href="#" className="font-medium text-gray-50 hover:text-gray-400 transition duration-200 ease-out">
+                            <AnchorLink href="#get"
+                                        offset='-25'
+                                        className="font-medium text-gray-50 hover:text-gray-400 transition duration-200 ease-out cursor-pointer"
+                            >
                                 Alerts
-                            </a>
+                            </AnchorLink>
 
-                            <a href="#" className="font-medium text-gray-50 hover:text-gray-400 transition duration-200 ease-out">
+                            <AnchorLink href="#faq"
+                                        offset='-25'
+                                        className="font-medium text-gray-50 hover:text-gray-400 transition duration-200 ease-out cursor-pointer"
+                            >
                                 FAQ
-                            </a>
+                            </AnchorLink>
 
-                            <a href="#" className="font-medium text-gray-50 hover:text-gray-400 transition duration-200 ease-out">
+                            <AnchorLink href="#testimonial"
+                                        offset='-25'
+                                        className="font-medium text-gray-50 hover:text-gray-400 transition duration-200 ease-out cursor-pointer"
+                            >
                                 Testimonial
-                            </a>
+                            </AnchorLink>
                         </div>
                     </nav>
                 </div>
-
-
-                  {/*Mobile menu, show/hide based on menu open state.*/}
-
-                  {/*Entering: "duration-150 ease-out"*/}
-                  {/*  From: "opacity-0 scale-95"*/}
-                  {/*  To: "opacity-100 scale-100"*/}
-                  {/*Leaving: "duration-100 ease-in"*/}
-                  {/*  From: "opacity-100 scale-100"*/}
-                  {/*  To: "opacity-0 scale-95"*/}
 
                 <Transition
                     show={navbarOpen}
@@ -85,35 +101,64 @@ function Navbar() {
                             <div className="fixed inset-0">
                                 <div className="absolute inset-0 bg-indigo-300 bg-opacity-90 w-full">
                                     <div className="flex items-center justify-between flex-col py-12 px-4 h-screen">
-                                        <img src="https://i.imgur.com/EkkJ6mb.png" alt="MyAlerts" />
+                                        <Logo2 />
+
                                         <div className="mb-8 mt-3">
                                             <div className="flex flex-col items-center space-y-8 mt-8">
-                                                <span className="text-4xl text-indigo-600 hover:text-indigo-700 transition duration-200 ease-out">
+
+                                                <AnchorLink href="#home"
+                                                            offset='100'
+                                                            className="text-4xl text-indigo-600 hover:text-indigo-700 transition duration-200 ease-out"
+                                                            onClick={() => setNavbarOpen(!navbarOpen)}
+                                                >
                                                     Home
-                                                </span>
+                                                </AnchorLink>
 
-                                                <span className="text-4xl text-gray-50 hover:text-gray-200 transition duration-200 ease-out">
+                                                <AnchorLink href="#features"
+                                                            offset='-25'
+                                                            className="text-4xl text-gray-50 hover:text-gray-200 transition duration-200 ease-out"
+                                                            onClick={() => setNavbarOpen(!navbarOpen)}
+                                                >
                                                     Features
-                                                </span>
+                                                </AnchorLink>
 
-                                                <span className="text-4xl text-gray-50 hover:text-gray-200 transition duration-200 ease-out">
+                                                <AnchorLink href="#steps"
+                                                            offset='-25'
+                                                            className="text-4xl text-gray-50 hover:text-gray-200 transition duration-200 ease-out"
+                                                            onClick={() => setNavbarOpen(!navbarOpen)}
+                                                >
                                                     Steps
-                                                </span>
+                                                </AnchorLink>
 
-                                                <span className="text-4xl text-gray-50 hover:text-gray-200 transition duration-200 ease-out">
+                                                <AnchorLink href="#get"
+                                                            offset='-25'
+                                                            className="text-4xl text-gray-50 hover:text-gray-200 transition duration-200 ease-out"
+                                                            onClick={() => setNavbarOpen(!navbarOpen)}
+                                                >
                                                     Alerts
-                                                </span>
+                                                </AnchorLink>
 
-                                                <span className="text-4xl text-gray-50 hover:text-gray-200 transition duration-200 ease-out">
+                                                <AnchorLink href="#faq"
+                                                            offset='-25'
+                                                            className="text-4xl text-gray-50 hover:text-gray-200 transition duration-200 ease-out"
+                                                            onClick={() => setNavbarOpen(!navbarOpen)}
+                                                >
                                                     FAQ
-                                                </span>
+                                                </AnchorLink>
 
-                                                <span className="text-4xl text-gray-50 hover:text-gray-200 transition duration-200 ease-out">
+                                                <AnchorLink href="#testimonial"
+                                                            offset='-25'
+                                                            className="text-4xl text-gray-50 hover:text-gray-200 transition duration-200 ease-out"
+                                                            onClick={() => setNavbarOpen(!navbarOpen)}
+                                                >
                                                     Testimonial
-                                                </span>
+                                                </AnchorLink>
                                             </div>
                                         </div>
-                                        <img src="https://i.imgur.com/Qg2Qwin.png" className="ml-6" onClick={() => setNavbarOpen(!navbarOpen)} alt="Close"/>
+                                        <CloseIcon
+                                            className="ml-6"
+                                            onClick={() => setNavbarOpen(!navbarOpen)}
+                                        />
                                     </div>
 
                                 </div>

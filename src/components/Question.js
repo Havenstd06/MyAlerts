@@ -5,7 +5,7 @@ const Question = ({ title, children }) => {
     const [isOpen, setIsOpen] = React.useState(false);
 
     return (
-        <div className="shadow-2xl shadow-inner border border-graybell rounded-3xl bg-gradient-to-tl from-graybell via-graybell-light to-graybell bg-opacity-60 px-8">
+        <div className="shadow-2xl shadow-inner border border-graybell rounded-3xl bg-gradient-to-tl from-graybell via-graybell-light to-graybell bg-opacity-60 px-2 md:px-8">
             <button
                 type="button"
                 aria-label="Open item"
@@ -13,7 +13,7 @@ const Question = ({ title, children }) => {
                 className="flex items-center justify-between w-full p-4 focus:outline-none"
                 onClick={() => setIsOpen(!isOpen)}
             >
-                <p className="text-lg font-medium text-gray-50">
+                <p className="text-lg font-medium text-gray-50 text-left">
                     {title}
                 </p>
                 <div className="flex items-center justify-center">
@@ -36,7 +36,7 @@ const Question = ({ title, children }) => {
                 leaveStart="opacity-100 scale-100"
                 leaveEnd="opacity-0 scale-95"
             >
-                <div className="p-4 pt-0 max-w-3xl">
+                <div className="p-4 pt-0 md:max-w-3xl">
                         <p className="text-indigo-400">{children}</p>
                 </div>
             </Transition>

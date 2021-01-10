@@ -4,25 +4,14 @@ import Navbar from "../components/Navbar";
 import HeroHome from "../components/HeroHome";
 
 
-function Header() {
-
-    const [top, setTop] = useState(true);
-
-    // detect whether user has scrolled the page down by 10px
-    useEffect(() => {
-        const scrollHandler = () => {
-            window.pageYOffset > 10 ? setTop(false) : setTop(true)
-        };
-        window.addEventListener('scroll', scrollHandler);
-        return () => window.removeEventListener('scroll', scrollHandler);
-    }, [top]);
-
+const Header = (props) => {
+    const { id = null } = props;
     return (
-        <header className="bg-gradient-to-t from-bluebell to-bluebell-light md:min-h-screen relative overflow-hidden">
+        <header className="bg-gradient-to-t from-bluebell to-bluebell-light md:min-h-screen relative overflow-hidden" id={id}>
                 {/*background svg*/}
                 <HeaderBackground />
 
-                <div className="relative py-14 sm:pb-8 z-50">
+                <div className="relative py-8 sm:pb-8 z-50">
                     <Navbar />
 
                     <HeroHome />

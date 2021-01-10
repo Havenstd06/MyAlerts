@@ -9,10 +9,11 @@ import Infobubble from "../components/svgr/features-icons/Infobubble";
 import Moneybag from "../components/svgr/features-icons/Moneybag";
 import Headphones from "../components/svgr/features-icons/Headphones";
 
-function Features() {
+const Features = (props) => {
+    const { id = null } = props;
 
     return (
-        <section className="relative min-h-screen pt-6 pb-12 sm:pb-24">
+        <section className="relative min-h-screen pt-6 pb-12 sm:pb-24" id={id}>
 
             <FeaturesBackground/>
 

@@ -9,7 +9,6 @@ import './css/App.css';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { focusHandling } from './utils/FocusHandling';
 
 import Home from './pages/Home';
 
@@ -25,13 +24,6 @@ function App() {
             easing: 'ease-out-cubic',
         });
     });
-
-    useEffect(() => {
-        document.querySelector('html').style.scrollBehavior = 'auto'
-        window.scroll({ top: 0 })
-        document.querySelector('html').style.scrollBehavior = ''
-        focusHandling('outline');
-    }, [location.pathname]); // triggered on route change
 
     return (
         <>
