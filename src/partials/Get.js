@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import HorizontalScroller from '../utils/HorizontalScroll';
+
+import '@brainhubeu/react-carousel/lib/style.css';
+import Carousel, { autoplayPlugin } from '@brainhubeu/react-carousel';
+
 import GetCard from "../components/GetCard";
 import Warning from "../components/svgr/for-less-than-icons/Warning";
 import Dollar from "../components/svgr/for-less-than-icons/Dollar";
@@ -16,36 +19,41 @@ const Get = (props) => {
             <h1 className="text-gray-50 text-4xl text-center pt-16" data-aos="zoom-y-out" data-aos-delay="250">
                 For Less Than A Cup Of Coffee You Get
             </h1>
+            <div className="mt-8">
+                <Carousel
+                    autoPlay={1500}
+                    animationSpeed={1500}
+                    itemWidth={360}
+                    infinite
+                >
 
-            <HorizontalScroller sensibility={10}>
-                <div className="w-full flex mt-8 lg:-ml-8 space-x-6" data-aos="zoom-y-out" data-aos-delay="450">
-                        <GetCard svg={<Warning />}
-                                 title="Shock Drops Coverage"
-                                 moreClass="pl-7 md:pl-14"
-                        />
+                    <GetCard svg={<Warning />}
+                             title="Shock Drops Coverage"
+                    />
 
-                        <GetCard svg={<Dollar />}
-                                 title="Profitable Finds"
-                        />
+                    <GetCard svg={<Dollar />}
+                             title="Profitable Finds"
+                    />
 
-                        <GetCard svg={<Pad />}
-                                 title="Daily Release Schedule"
-                        />
+                    <GetCard svg={<Pad />}
+                             title="Daily Release Schedule"
+                    />
 
-                        <GetCard svg={<Book />}
-                                 title="Weekly Release Schedule"
-                        />
+                    <GetCard svg={<Book />}
+                             title="Weekly Release Schedule"
+                    />
 
-                        <GetCard svg={<Hourglass />}
-                                 title="Drop Time Reminders"
-                        />
+                    <GetCard svg={<Hourglass />}
+                             title="Drop Time Reminders"
+                    />
 
-                        <GetCard svg={<Bell />}
-                                 title="No More “FOMO” on Drops"
-                                 moreClass="pr-7"
-                        />
-                </div>
-            </HorizontalScroller>
+                    <GetCard svg={<Bell />}
+                             title="No More “FOMO” on Drops"
+                    />
+
+                </Carousel>
+            </div>
+
         </div>
     );
 }

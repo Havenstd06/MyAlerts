@@ -14,8 +14,6 @@ import Home from './pages/Home';
 
 function App() {
 
-    const location = useLocation();
-
     useEffect(() => {
         AOS.init({
             once: true,
