@@ -6,7 +6,7 @@ const TestimonialItem = (props) => {
     return (
         <div className={"relative focus:outline-none " + moreClass}>
             <div>
-                <div className="max-w-2xl mx-auto text-center text-xl leading-9 font-medium text-gray-50">
+                <div className="max-w-full md:max-w-2xl mx-auto text-center text-2xl lg:text-3xl leading-9 font-medium text-indigo-400">
                     <p>
                         &ldquo;{text}&rdquo;
                     </p>

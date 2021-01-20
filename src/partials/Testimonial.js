@@ -8,6 +8,41 @@ import TestimonialItem from "../components/TestimonialItem";
 const Testimonial = (props) => {
     const { id = null } = props;
 
+    // var settings = {
+    //     dots: true,
+    //     infinite: false,
+    //     speed: 500,
+    //     slidesToShow: 4,
+    //     slidesToScroll: 4,
+    //     initialSlide: 0,
+    //     responsive: [
+    //         {
+    //             breakpoint: 1024,
+    //             settings: {
+    //                 slidesToShow: 3,
+    //                 slidesToScroll: 3,
+    //                 infinite: true,
+    //                 dots: true
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 600,
+    //             settings: {
+    //                 slidesToShow: 2,
+    //                 slidesToScroll: 2,
+    //                 initialSlide: 2
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 480,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1
+    //             }
+    //         }
+    //     ]
+    // };
+
     const settings = {
         dots: true,
         infinite: true,
@@ -16,7 +51,6 @@ const Testimonial = (props) => {
         autoplaySpeed: 5000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        centerMode: true,
         cssEase: "ease-in-out",
     };
 
@@ -25,39 +59,42 @@ const Testimonial = (props) => {
 
             <TestimonialBackground/>
 
-            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 z-50">
+            <div className="relative md:max-w-7xl mx-auto px-4 sm:px-6 z-50">
 
-                <h1 className="text-gray-50 text-4xl text-center pt-8" data-aos="zoom-y-out" data-aos-delay="250">
-                    Testimonials
-                </h1>
+                <div className="max-w-xl mx-auto text-center pt-8 text-gray-50">
+                    <h1 className="text-4xl">
+                        Testimonials
+                    </h1>
 
-                <div className="px-4 py-6 mx-auto md:px-24 lg:px-8 lg:py-8 mt-8" data-aos="zoom-y-out" data-aos-delay="450">
-                    <div className="max-w-xl sm:mx-auto lg:max-w-5xl">
-                        <Slider
-                            {...settings}
-                            className="text-center pb-24 pt-12 text-gray-100"
-                        >
-                            <TestimonialItem
-                                text="We prefer member success to do the talking.
-                                Take a look at Testimonials to see our clients success."
-                                author="Eric B"
-                            />
+                    <h4 className="text-lg pt-4" data-aos="zoom-y-out" data-aos-delay="350">
+                        We prefer member success to do the talking.
+                        Take a look at Testimonials to see our clients success.
+                    </h4>
+                </div>
 
-                            <TestimonialItem
-                                text="Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Animi autem consequuntur cupiditate deleniti dolore ducimus."
-                                author="Havens"
-                            />
+                <div className="px-4 py-6 lg:px-8 lg:py-8 mt-8" data-aos="zoom-y-out" data-aos-delay="450">
+                    <Slider
+                        {...settings}
+                        className="text-center py-6 text-gray-100"
+                    >
+                        <TestimonialItem
+                            text="Who knew I could make hundreds in profit each week off of a simple text message?"
+                            author="Eric B"
+                        />
 
-                            <TestimonialItem
-                                text="Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Animi autem consequuntur cupiditate deleniti dolore ducimus."
-                                author="RU"
-                            />
+                        <TestimonialItem
+                            text="Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Animi autem consequuntur cupiditate deleniti dolore ducimus."
+                            author="Havens"
+                        />
 
+                        <TestimonialItem
+                            text="Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Animi autem consequuntur cupiditate deleniti dolore ducimus."
+                            author="RU"
+                        />
 
-                        </Slider>
-                    </div>
+                    </Slider>
                 </div>
             </div >
         </section >
