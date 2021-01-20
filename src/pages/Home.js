@@ -27,32 +27,7 @@ function Home() {
                 <meta name="description" content="Don’t Miss Releases With MyAlerts." data-react-helmet="true" />
                 <meta name="keywords" content="Alerts, MyAlerts, Notifications" data-react-helmet="true" />
 
-                {/*Twitter*/}
-                <meta name="twitter:card" content="summary_large_image" data-react-helmet="true" />
-                <meta name="twitter:title" content="MyAlerts" data-react-helmet="true" />
-                <meta name="twitter:description" content="Don’t Miss Releases With MyAlerts." data-react-helmet="true" />
-                <meta name="twitter:site" content="@ALERTS_IO" data-react-helmet="true" />
-                <meta name="twitter:creator" content="@ALERTS_IO" data-react-helmet="true" />
-                <meta name="twitter:image" content={Logo} data-react-helmet="true" />
 
-                {/*Open Graph general (Facebook, Pinterest)*/}
-                <meta property="og:title" content="MyAlerts" data-react-helmet="true" />
-                <meta property="og:description" content="Don’t Miss Releases With MyAlerts." data-react-helmet="true" />
-                <meta property="og:url" content="https://myalerts.io" data-react-helmet="true" />
-                <meta property="og:site_name" content="myalerts.io" data-react-helmet="true" />
-                <meta property="og:type" content="website" data-react-helmet="true" />
-                <meta property="og:image" content={Logo} data-react-helmet="true" />
-
-                {/*Favicon*/}
-                <link rel="apple-touch-icon" sizes="180x180" href={AppleTouchIcon} data-react-helmet="true" />
-                <link rel="icon" type="image/png" sizes="32x32" href={Favicon32x32} data-react-helmet="true" />
-                <link rel="icon" type="image/png" sizes="16x16" href={Favicon16x16} data-react-helmet="true" />
-                <link rel="manifest" href={SiteWebmanifest} data-react-helmet="true" />
-                <link rel="mask-icon" href={SafariPinnedTab} color="#5bbad5" data-react-helmet="true" />
-                <meta name="msapplication-TileColor" content="#da532c" data-react-helmet="true" />
-
-                <meta name="viewport" content="width=device-width, initial-scale=1" data-react-helmet="true" />
-                <meta name="theme-color" content="#ffffff" data-react-helmet="true" />
             </Helmet>
             <div className="flex flex-col min-h-screen overflow-hidden">
                 {/*  Site header */}
