@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import Fade from 'react-reveal/Fade';
+import Flip from 'react-reveal/Flip';
+
 import StepOne from "../components/svgr/steps-icons/StepOne";
 import StepCard from "../components/StepCard";
 import StepTwo from "../components/svgr/steps-icons/StepTwo";
@@ -11,28 +14,37 @@ const Steps = (props) => {
     return (
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 pb-20" id={id}>
 
-            <h1 className="text-gray-50 text-4xl text-center pt-16" data-aos="zoom-y-out" data-aos-delay="250">
-                Steps To Join
-            </h1>
+            <Fade left>
+                <h1 className="text-gray-50 text-4xl text-center pt-16">
+                    Steps To Join
+                </h1>
+            </Fade>
 
-            <div data-aos="zoom-y-out" data-aos-delay="450">
+            <div data-aos="zoom-y-out" data-aos-delay="0">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-8 mt-8 lg:-ml-8">
-                    <StepCard svg={<StepOne className="transform translate-x-0 lg:translate-x-1/3" />}
-                              title="Enter Your Phone Number"
-                              description="Enter your phone number at the Website and Click on “Join Today”"
-                              moreClass="lg:pl-8"
-                    />
 
-                    <StepCard svg={<StepTwo className="transform -translate-x-1/7 lg:translate-x-1/3 relative z-50" />}
-                              title="Signup and Subscribe"
-                              description="Once you filled your Billing information and Region, Click on “Subscribe”"
-                              reversed={true}
-                    />
+                    <Flip bottom>
+                        <StepCard svg={<StepOne className="transform translate-x-0 lg:translate-x-1/3" />}
+                                  title="Enter Your Phone Number"
+                                  description="Enter your phone number at the Website and Click on “Join Today”"
+                                  moreClass="lg:pl-8"
+                        />
+                    </Flip>
 
-                    <StepCard svg={<StepThree className="transform translate-x-1/7 lg:translate-x-1/3 relative z-50" />}
-                              title="Prepare to Cook!"
-                              description="You will be redirected to your dashboard and will now receive Alerts!"
-                    />
+                    <Flip bottom>
+                        <StepCard svg={<StepTwo className="transform -translate-x-1/7 lg:translate-x-1/3 relative z-50" />}
+                                  title="Signup and Subscribe"
+                                  description="Once you filled your Billing information and Region, Click on “Subscribe”"
+                                  reversed={true}
+                        />
+                    </Flip>
+
+                    <Flip bottom>
+                        <StepCard svg={<StepThree className="transform translate-x-1/7 lg:translate-x-1/3 relative z-50" />}
+                                  title="Prepare to Cook!"
+                                  description="You will be redirected to your dashboard and will now receive Alerts!"
+                        />
+                    </Flip>
                 </div>
 
                 <svg

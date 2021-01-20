@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
-
 import Slider from "react-slick";
+import Fade from "react-reveal/Fade";
+import Flip from "react-reveal/Flip";
 
 import GetCard from "../components/GetCard";
 import Warning from "../components/svgr/for-less-than-icons/Warning";
@@ -55,41 +56,45 @@ const Get = (props) => {
 
     return (
         <div className="relative mx-auto mx-4 pt-12 z-50" id={id}>
-            <h1 className="text-gray-50 text-4xl text-center pt-16" data-aos="zoom-y-out" data-aos-delay="250">
-                For Less Than A Cup Of Coffee You Get
-            </h1>
-            <div className="mt-8" data-aos="zoom-y-out" data-aos-delay="450">
+            <Fade left>
+                <h1 className="text-gray-50 text-4xl text-center pt-16">
+                    For Less Than A Cup Of Coffee You Get
+                </h1>
+            </Fade>
+            <Flip bottom>
+                <div className="mt-8">
 
-                <Slider
-                    {...settings}
-                >
+                    <Slider
+                        {...settings}
+                    >
 
-                    <GetCard svg={<Warning />}
-                             title="Shock Drops Coverage"
-                    />
+                        <GetCard svg={<Warning />}
+                                 title="Shock Drops Coverage"
+                        />
 
-                    <GetCard svg={<Dollar />}
-                             title="Profitable Finds"
-                    />
+                        <GetCard svg={<Dollar />}
+                                 title="Profitable Finds"
+                        />
 
-                    <GetCard svg={<Pad />}
-                             title="Daily Release Schedule"
-                    />
+                        <GetCard svg={<Pad />}
+                                 title="Daily Release Schedule"
+                        />
 
-                    <GetCard svg={<Book />}
-                             title="Weekly Release Schedule"
-                    />
+                        <GetCard svg={<Book />}
+                                 title="Weekly Release Schedule"
+                        />
 
-                    <GetCard svg={<Hourglass />}
-                             title="Drop Time Reminders"
-                    />
+                        <GetCard svg={<Hourglass />}
+                                 title="Drop Time Reminders"
+                        />
 
-                    <GetCard svg={<Bell />}
-                             title="No More “FOMO” on Drops"
-                    />
+                        <GetCard svg={<Bell />}
+                                 title="No More “FOMO” on Drops"
+                        />
 
-                </Slider>
-            </div>
+                    </Slider>
+                </div>
+            </Flip>
 
         </div>
     );
