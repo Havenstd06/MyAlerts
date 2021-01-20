@@ -96,7 +96,7 @@ function Navbar() {
                     leaveStart="opacity-100 scale-100"
                     leaveEnd="opacity-0 scale-95"
                 >
-                    <div className="md:hidden">
+                    <div className="md:hidden overflow-hidden">
                         <div className="fixed inset-0 flex z-50">
                             <div className="fixed inset-0">
                                 <div className="absolute inset-0 bg-indigo-300 bg-opacity-90 w-full">
