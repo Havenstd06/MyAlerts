@@ -4,6 +4,8 @@ import {
     Route,
 } from 'react-router-dom';
 
+import { Sugar } from './utils/preloader';
+
 import './css/App.css';
 
 import AOS from 'aos';
@@ -30,6 +32,7 @@ function App() {
             <Switch>
                 <Route exact path="/">
                     <Home />
+                    <Sugar background="linear-gradient(180deg, #15152D 0%, #2A2B6E 100%)" color={'#9DB4FF'} />
                 </Route>
             </Switch>
         </React.Fragment>
