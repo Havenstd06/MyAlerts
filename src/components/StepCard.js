@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 
 const FeatureCard = (props) => {
     const { moreClass = "", svg, title, description, reversed = false } = props;

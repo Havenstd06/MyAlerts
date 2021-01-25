@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import {
     Switch,
     Route,
-    useLocation
 } from 'react-router-dom';
 
 import './css/App.css';
@@ -27,13 +26,13 @@ function App() {
     });
 
     return (
-        <>
+        <React.Fragment>
             <Switch>
                 <Route exact path="/">
                     <Home />
                 </Route>
             </Switch>
-        </>
+        </React.Fragment>
     );
 }
 

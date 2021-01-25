@@ -17,7 +17,7 @@ function Navbar() {
                          aria-label="Global">
                         <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
                             <div className="flex items-center justify-between w-full md:w-auto">
-                                <a href="#" data-aos="zoom-y-out" data-aos-delay="200">
+                                <a href="https://myalerts.io" data-aos="zoom-y-out" data-aos-delay="200">
                                     <span className="sr-only">MyAlerts</span>
                                     <Logo />
                                 </a>

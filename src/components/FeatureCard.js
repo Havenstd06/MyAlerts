@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 
 const FeatureCard = (props) => {
     const { svg, title, description, titleBr = false, descBr = false } = props;

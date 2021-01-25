@@ -1,7 +1,6 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React from 'react';
 import Fade from 'react-reveal/Fade';
 
-import Transition from '../utils/Transition.js';
 import FeaturesBackground from "../components/backgrounds/FeaturesBackground";
 import FeatureCard from "../components/FeatureCard";
 import Phone from "../components/svgr/features-icons/Phone";
