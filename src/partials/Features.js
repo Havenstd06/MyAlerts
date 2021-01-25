@@ -21,7 +21,7 @@ const Features = (props) => {
 
             <div className="relative max-w-6xl mx-auto px-4 sm:px-6 z-50">
 
-                <Fade left>
+                <Fade>
                     <h1 className="text-gray-50 text-4xl text-center pt-16" data-aos="zoom-y-out" data-aos-delay="250">
                         Features
                     </h1>
@@ -29,7 +29,7 @@ const Features = (props) => {
 
                 <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-3 gap-8 mt-8">
 
-                    <Fade left>
+                    <Fade>
                         <FeatureCard svg={<Phone className="ml-2 w-full" />}
                                      title="SMS Notifications"
                                      description="The second it drops, the moment you cop. Simple, Fast, Efficient."
@@ -38,14 +38,14 @@ const Features = (props) => {
                         />
                     </Fade>
 
-                    <Fade bottom>
+                    <Fade>
                         <FeatureCard svg={<Pin className="w-full" />}
                                      title="Nationwide Coverage, Worldwide Soon"
                                      description="No matter where you're located or what timezone you're in, Alert covers it all."
                         />
                     </Fade>
 
-                    <Fade right>
+                    <Fade>
                         <FeatureCard svg={<Calendar className="w-full" />}
                                      title="Daily/Weekly Update"
                                      description="Alert members will receive texts on a weekly and daily basis on the most important information to set you up for success."
@@ -53,7 +53,7 @@ const Features = (props) => {
                         />
                     </Fade>
 
-                    <Fade left>
+                    <Fade>
                         <FeatureCard svg={<Infobubble className="w-full" />}
                                      title="Insider Information"
                                      description="Our intricate knowledge of all industries allows us to keep notified of the lasted inside information."
@@ -61,7 +61,7 @@ const Features = (props) => {
                         />
                     </Fade>
 
-                    <Fade bottom>
+                    <Fade>
                         <FeatureCard svg={<Moneybag className="w-full" />}
                                      title="Oriented Flip Access"
                                      description="We cover more than just sneakers - we cover all avenues of profit, with anything from consoles to toys, and everything in between."
@@ -69,7 +69,7 @@ const Features = (props) => {
                         />
                     </Fade>
 
-                    <Fade right>
+                    <Fade>
                         <FeatureCard svg={<Headphones className="w-full" />}
                                      title="24/24 - 7/7 Support"
                                      description="Our support team is active around the clock to ensure all problems are taken care of."

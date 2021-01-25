@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 import Slider from "react-slick";
 import Fade from "react-reveal/Fade";
-import Flip from "react-reveal/Flip";
 
 import GetCard from "../components/GetCard";
 import Warning from "../components/svgr/for-less-than-icons/Warning";
@@ -56,12 +55,12 @@ const Get = (props) => {
 
     return (
         <div className="relative mx-auto mx-4 pt-12 z-50" id={id}>
-            <Fade left>
+            <Fade>
                 <h1 className="text-gray-50 text-4xl text-center pt-16">
                     For Less Than A Cup Of Coffee You Get
                 </h1>
             </Fade>
-            <Flip bottom>
+            <Fade>
                 <div className="mt-8">
 
                     <Slider
@@ -94,7 +93,7 @@ const Get = (props) => {
 
                     </Slider>
                 </div>
-            </Flip>
+            </Fade>
 
         </div>
     );

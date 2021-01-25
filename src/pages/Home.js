@@ -15,9 +15,9 @@ function Home() {
         <div className="application">
             <Helmet>
                 <title>MyAlerts</title>
-                <meta name="author" content="Havens" data-react-helmet="true"/>
-                <meta name="description" content="Don’t Miss Releases With MyAlerts." data-react-helmet="true" />
-                <meta name="keywords" content="Alerts, MyAlerts, Notifications" data-react-helmet="true" />
+                <meta name="author" content="Havens" />
+                <meta name="description" content="Don’t Miss Releases With MyAlerts." />
+                <meta name="keywords" content="Alerts, MyAlerts, Notifications" />
             </Helmet>
             <div className="flex flex-col min-h-screen overflow-hidden">
                 {/*  Site header */}

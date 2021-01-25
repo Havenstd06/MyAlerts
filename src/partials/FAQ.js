@@ -1,6 +1,5 @@
 import React from 'react';
 import Fade from "react-reveal/Fade";
-import Flip from "react-reveal/Flip";
 
 import FAQBackground from "../components/backgrounds/FAQBackground";
 import Question from "../components/Question";
@@ -15,7 +14,7 @@ const FAQ = (props) => {
 
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 z-50">
 
-                <Fade left>
+                <Fade>
                     <h1 className="text-gray-50 text-4xl text-center pt-16">
                         Frequently Asked Questions
                     </h1>
@@ -30,40 +29,34 @@ const FAQ = (props) => {
                             </Question>
 
                             <Question title="How much does it Cost?">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                accusantium doloremque rem aperiam, eaque ipsa quae.
+                                Alerts currently costs $3.99 per month.
                             </Question>
 
                             <Question title="How can I sign up?">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                accusantium doloremque rem aperiam, eaque ipsa quae.
+                                Simply click on “Subscribe Now” to begin the process.
                             </Question>
 
                             <Question title="Does it matter if I have an Android or iPhone?">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                accusantium doloremque rem aperiam, eaque ipsa quae.
+                                Nope! As long as you have a phone number, Alerts will cover it all.
                             </Question>
 
                             <Question title="Which Countries are covered by Alerts?">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                accusantium doloremque rem aperiam, eaque ipsa quae.
+                                Currently only the US but worldwide coverage is coming soon.
                             </Question>
 
                             <Question title="Can I cancel anytime?">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                accusantium doloremque rem aperiam, eaque ipsa quae.
+                                Yes! You can cancel in our dashboard at anytime.
                             </Question>
 
                             <Question title="How soon will I start getting texts after purchase?">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                accusantium doloremque rem aperiam, eaque ipsa quae.
+                                Immediately.
                             </Question>
 
                         </div>
                     </div>
                 </div>
-            </div >
-        </section >
+            </div>
+        </section>
     );
 }
 

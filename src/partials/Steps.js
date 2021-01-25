@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
-import Flip from 'react-reveal/Flip';
 
 import StepOne from "../components/svgr/steps-icons/StepOne";
 import StepCard from "../components/StepCard";
@@ -14,7 +13,7 @@ const Steps = (props) => {
     return (
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 pb-20" id={id}>
 
-            <Fade left>
+            <Fade>
                 <h1 className="text-gray-50 text-4xl text-center pt-16">
                     Steps To Join
                 </h1>
@@ -23,28 +22,28 @@ const Steps = (props) => {
             <div data-aos="zoom-y-out" data-aos-delay="0">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-8 mt-8 lg:-ml-8">
 
-                    <Flip bottom>
+                    <Fade>
                         <StepCard svg={<StepOne className="transform translate-x-0 lg:translate-x-1/3" />}
                                   title="Enter Your Phone Number"
                                   description="Enter your phone number at the Website and Click on “Join Today”"
                                   moreClass="lg:pl-8"
                         />
-                    </Flip>
+                    </Fade>
 
-                    <Flip bottom>
+                    <Fade>
                         <StepCard svg={<StepTwo className="transform -translate-x-1/7 lg:translate-x-1/3 relative z-50" />}
                                   title="Signup and Subscribe"
                                   description="Once you filled your Billing information and Region, Click on “Subscribe”"
                                   reversed={true}
                         />
-                    </Flip>
+                    </Fade>
 
-                    <Flip bottom>
+                    <Fade>
                         <StepCard svg={<StepThree className="transform translate-x-1/7 lg:translate-x-1/3 relative z-50" />}
                                   title="Prepare to Cook!"
                                   description="You will be redirected to your dashboard and will now receive Alerts!"
                         />
-                    </Flip>
+                    </Fade>
                 </div>
 
                 <svg
