@@ -1,6 +1,5 @@
 import React from "react";
 import SvgHeroPhone from "./svgr/HeroPhone";
-// import SvgHeroPhoneMobile from "./svgr/HeroPhoneMobile";
 
 function HeroHome() {
     return (
@@ -37,7 +36,6 @@ function HeroHome() {
                 <div
                     className="lg:max-w-lg order-1 md:order-2 md:mt-8 px-4"
                     data-aos="zoom-y-out" data-aos-delay="900">
-                    {/*<SvgHeroPhoneMobile className="w-full h-full md:hidden block" />*/}
                     <SvgHeroPhone className="w-full h-full" />
                 </div>
             </div>

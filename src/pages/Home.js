@@ -9,14 +9,6 @@ import FAQ from "../partials/FAQ";
 import Testimonial from "../partials/Testimonial";
 import StepsBackground from "../components/backgrounds/StepsBackground";
 import Footer from '../partials/Footer';
-import Logo from '../images/logo-500-676.png'
-
-// Favicon
-import AppleTouchIcon from '../images/favicon/apple-touch-icon.png';
-import Favicon32x32 from '../images/favicon/favicon-32x32.png';
-import Favicon16x16 from '../images/favicon/favicon-16x16.png';
-import SiteWebmanifest from '../images/favicon/site.webmanifest';
-import SafariPinnedTab from '../images/favicon/safari-pinned-tab.svg';
 
 function Home() {
     return (
@@ -26,8 +18,6 @@ function Home() {
                 <meta name="author" content="Havens" data-react-helmet="true"/>
                 <meta name="description" content="Don’t Miss Releases With MyAlerts." data-react-helmet="true" />
                 <meta name="keywords" content="Alerts, MyAlerts, Notifications" data-react-helmet="true" />
-
-
             </Helmet>
             <div className="flex flex-col min-h-screen overflow-hidden">
                 {/*  Site header */}
