@@ -6,7 +6,7 @@ const FeatureCard = (props) => {
     return (
         <div className={"col-span-3 lg:col-span-1 " + moreClass}>
             <div className="flex items-center w-full">
-                <div className={(reversed ? "order-2 lg:order-1" : "")}>
+                <div className={"z-40 " + (reversed ? "order-2 lg:order-1" : "")}>
                     {svg}
                 </div>
                 <div className={"py-6 h-52 lg:h-50 w-full lg:w-64 flex justify-center shadow-2xl shadow-inner border border-graybell rounded-3xl bg-gradient-to-tl from-graybell via-graybell-light to-graybell bg-opacity-60" + (reversed ? "order-1 lg:order-2" : "") }>

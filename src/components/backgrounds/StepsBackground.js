@@ -1,6 +1,6 @@
-function FeaturesBackground() {
+function StepsBackground() {
     return (
-        <div className="hidden md:block absolute inset-y-0 h-full w-full overflow-hidden z-10">
+        <div className="hidden md:block absolute inset-y-0 h-full w-full overflow-hidden z-0">
             <div className="relative h-full">
 
                 {/*chat box group bottom left*/}
@@ -95,4 +95,4 @@ function FeaturesBackground() {
     )
 }
 
-export default FeaturesBackground;
+export default StepsBackground;
