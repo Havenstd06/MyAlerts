@@ -31,7 +31,7 @@ const Footer = (props) => {
                 </span>
                 <span className="inline-flex items-center justify-center mt-2 sm:mt-0 sm:justify-start">
                     <h2 className="uppercase text-bluebell text-sm font-inter font-medium tracking-wider transition duration-200 ease-out hover:text-graybell">
-                        &copy;{new Date().getFullYear()} Alerts IO LLC
+                        &copy;{new Date().getFullYear()} Sneaker Alerts LLC
                     </h2>
                 </span>
             </div>
