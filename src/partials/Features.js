@@ -26,7 +26,7 @@ const Features = (props) => {
                     </h1>
                 </Fade>
 
-                <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-3 gap-8 mt-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
 
                     <Fade>
                         <FeatureCard svg={<Phone className="ml-2 w-full" />}
@@ -70,7 +70,7 @@ const Features = (props) => {
 
                     <Fade>
                         <FeatureCard svg={<Headphones className="w-full" />}
-                                     title="24/24 - 7/7 Support"
+                                     title={["24/7", <br/>,  " Support"]}
                                      description="Our support team is active around the clock to ensure all problems are taken care of."
                                      titleBr={true}
                         />

@@ -37,7 +37,7 @@ function Navbar() {
                                 </div>
                             </div>
                         </div>
-                        <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0 md:space-x-10"
+                        <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0 space-x-6 lg:space-x-10"
                              data-aos="zoom-y-out"
                              data-aos-delay="1800">
 
@@ -80,8 +80,13 @@ function Navbar() {
                                         offset='-25'
                                         className="font-medium text-gray-50 hover:text-gray-400 transition duration-200 ease-out cursor-pointer"
                             >
-                                Testimonial
+                                Testimonials
                             </AnchorLink>
+
+                            <a href="http://myalerts.io/dashboard"
+                               className="w-full inline-flex justify-center items-center px-8 py-2.5 border border-transparent rounded-full shadow-sm font-medium text-gray-50 hover:text-gray-100 bg-lightbell-light hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-200 ease-in-out">
+                                Dashboard
+                            </a>
                         </div>
                     </nav>
                 </div>
@@ -97,14 +102,14 @@ function Navbar() {
                     leaveEnd="opacity-0 scale-95"
                 >
                     <div className="md:hidden overflow-hidden">
-                        <div className="fixed inset-0 flex z-50">
-                            <div className="fixed inset-0">
+                        <div className="fixed inset-0 flex z-50 overflow-hidden">
+                            <div className="fixed inset-0 overflow-hidden">
                                 <div className="absolute inset-0 bg-indigo-300 bg-opacity-90 w-full">
-                                    <div className="flex items-center justify-between flex-col py-12 px-4 h-screen">
+                                    <div className="flex items-center justify-between flex-col py-10 px-4 h-screen overflow-scroll">
                                         <Logo2 />
 
-                                        <div className="mb-8 mt-3">
-                                            <div className="flex flex-col items-center space-y-8 mt-8">
+                                        <div className="mb-6 mt-1">
+                                            <div className="flex flex-col items-center space-y-6 mt-6">
 
                                                 <AnchorLink href="#home"
                                                             offset='100'
@@ -151,12 +156,17 @@ function Navbar() {
                                                             className="text-4xl text-gray-50 hover:text-gray-200 transition duration-200 ease-out"
                                                             onClick={() => setNavbarOpen(!navbarOpen)}
                                                 >
-                                                    Testimonial
+                                                    Testimonials
                                                 </AnchorLink>
+
+                                                <a href="http://myalerts.io/dashboard"
+                                                   className="w-full inline-flex justify-center items-center px-8 py-2.5 border border-transparent rounded-full shadow-sm text-2xl font-medium text-gray-50 hover:text-gray-100 bg-lightbell-light hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-200 ease-in-out">
+                                                    Dashboard
+                                                </a>
                                             </div>
                                         </div>
                                         <CloseIcon
-                                            className="ml-6"
+                                            className=""
                                             onClick={() => setNavbarOpen(!navbarOpen)}
                                         />
                                     </div>

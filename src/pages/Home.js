@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from "react-helmet";
 
 import Header from '../partials/Header';
 import Features from '../partials/Features';
@@ -13,12 +12,6 @@ import Footer from '../partials/Footer';
 function Home() {
     return (
         <div className="application">
-            <Helmet>
-                <title>MyAlerts</title>
-                <meta name="author" content="Havens" />
-                <meta name="description" content="Don’t Miss Releases With MyAlerts." />
-                <meta name="keywords" content="Alerts, MyAlerts, Notifications" />
-            </Helmet>
             <div className="flex flex-col min-h-screen overflow-hidden">
                 {/*  Site header */}
                 <Header id="home" />
