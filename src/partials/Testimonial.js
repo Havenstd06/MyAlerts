@@ -12,8 +12,8 @@ const Testimonial = (props) => {
         dots: true,
         infinite: true,
         autoplay: true,
-        speed: 1300,
-        autoplaySpeed: 3000,
+        speed: 3000,
+        autoplaySpeed: 6000,
         slidesToShow: 1,
         slidesToScroll: 1,
         cssEase: "ease-in-out",
@@ -48,20 +48,18 @@ const Testimonial = (props) => {
                             className="text-center py-6 text-gray-100"
                         >
                             <TestimonialItem
-                                text="Who knew I could make hundreds in profit each week off of a simple text message?"
-                                author="Eric B"
+                                text="MyAlerts helped me cook 3 PS5s off Walmart and Sony and 5 Xbox’s. I made over $1,500 of this alone."
+                                author="Wavers"
                             />
 
                             <TestimonialItem
-                                text="Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Animi autem consequuntur cupiditate deleniti dolore ducimus."
-                                author="Havens"
+                                text="I joined for the Shock Drops, but have continued to stay for everything else. Can’t imagine reselling without MyAlerts!"
+                                author="303Hype"
                             />
 
                             <TestimonialItem
-                                text="Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Animi autem consequuntur cupiditate deleniti dolore ducimus."
-                                author="RU"
+                                text="I always wanted to get into reselling but I never when to buy products when they are sold out all the time. MyAlerts Texts really helped me to stay updated with releases and now I never miss anymore drops."
+                                author="Hoody"
                             />
 
                         </Slider>
