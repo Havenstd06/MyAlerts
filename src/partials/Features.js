@@ -14,7 +14,7 @@ const Features = (props) => {
     const { id = null } = props;
 
     return (
-        <section className="relative min-h-screen pt-6 pb-12 sm:pb-24" id={id}>
+        <section className="relative min-h-screen 2xl:min-h-0 pt-6 pb-12 sm:pb-24" id={id}>
 
             <FeaturesBackground/>
 

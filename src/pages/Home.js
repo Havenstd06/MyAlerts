@@ -22,7 +22,7 @@ function Home() {
                     {/*  Page sections */}
                     <Features id="features" />
 
-                    <div className="relative min-h-screen pt-6 pb-6 sm:pb-12">
+                    <div className="relative min-h-screen 2xl:min-h-0 pt-6 pb-6 sm:pb-12">
                         <StepsBackground />
 
                         <Steps id="steps" />

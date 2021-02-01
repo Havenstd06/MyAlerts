@@ -7,7 +7,7 @@ import HeroHome from "../components/HeroHome";
 const Header = (props) => {
     const { id = null } = props;
     return (
-        <header className="bg-gradient-to-t from-bluebell to-bluebell-light md:min-h-screen relative overflow-hidden" id={id}>
+        <header className="bg-gradient-to-t from-bluebell to-bluebell-light md:min-h-screen 2xl:min-h-0 relative overflow-hidden" id={id}>
                 {/*background svg*/}
                 <HeaderBackground />
 
