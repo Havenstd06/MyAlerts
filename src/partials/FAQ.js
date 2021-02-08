@@ -24,7 +24,7 @@ const FAQ = (props) => {
                     <div className="max-w-xl sm:mx-auto lg:max-w-5xl">
                         <div className="space-y-4">
 
-                            <Question title="What is Alerts?">
+                            <Question title="What is MyAlerts?">
                                 Alerts is a Text Message Service that caters all your reselling information straight to your phone.
                             </Question>
 
@@ -40,7 +40,7 @@ const FAQ = (props) => {
                                 Nope! As long as you have a phone number, Alerts will cover it all.
                             </Question>
 
-                            <Question title="Which Countries are covered by Alerts?">
+                            <Question title="Which Countries are covered by MyAlerts?">
                                 Currently only the US but worldwide coverage is coming soon.
                             </Question>
 
